@@ -4,7 +4,7 @@ module.exports = {
   mode: "spa",
   target: "static",
   router: {
-    base: "/boardgame"
+    base: "/boardgame/"
   },
   /*
    ** Headers of the page

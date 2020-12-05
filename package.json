@@ -7,7 +7,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "now-build": "nuxt generate",
-    "deploy": "gh-pages -d dist"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "babel-plugin-transform-runtime": "~6.23.0",
     "gh-pages": "^3.1.0",
     "node-sass": "^4.13.1",
+    "push-dir": "^0.4.1",
     "sass-loader": "~10.0.4",
     "vue-template-compiler": "^2.6.11"
   },
