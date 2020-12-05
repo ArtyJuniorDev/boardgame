@@ -1,8 +1,11 @@
 const pkg = require("./package");
 
 module.exports = {
-  mode: "universal",
-
+  mode: "spa",
+  target: "static",
+  router: {
+    base: "boardgame"
+  },
   /*
    ** Headers of the page
    */
@@ -143,12 +146,5 @@ module.exports = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  }
-};
-
-export default {
-  target: "static",
-  router: {
-    base: "boardgame"
   }
 };
