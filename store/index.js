@@ -12,6 +12,8 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
+      isRecommend: true,
+      isPromotion: false,
       quantity: 1
     },
     {
@@ -26,6 +28,8 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
+      isRecommend: false,
+      isPromotion: true,
       quantity: 1
     },
     {
@@ -40,50 +44,52 @@ export const state = () => ({
       isAddedToCart: false,
       isAddedBtn: false,
       isFavourite: false,
-      quantity: 1
-    },
-    {
-      id: 4,
-      title: "Exploding Kittens",
-      description:
-        "วิธีเล่นเหมือนการเดิมพันรัสเชียนรูเล็ตต์ที่ต้องอาศัยกลยุทธ์และพลังแมวเหมียว ผู้เล่นจะผลัดกันจั่วการ์ดจนกว่าจะมีคนจั่วเจอแมวระเบิด และระเบิดตัวตายออกจากเกม นอกจากว่าจะมีการ์ดปลดระเบิดที่ช่วยให้รอดตายจากแมวด้วยการใช้ปากกาเลเซอร์ล่อแมว เกาพุง หรือแซนวิชกัญชาแมว ส่วนการ์ดอื่นๆ ในกองมีไว้เพื่อช่วยให้ผู้เล่นสามารถหลีกเลี่ยงหรือย้ายที่แมวระเบิดได้",
-      images: require("../static/cat.jpeg"),
-      price: 700,
-      ratings: 1,
-      reviews: 0,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1
-    },
-    {
-      id: 5,
-      title: "Dark Souls",
-      description:
-        "Dark Souls: The Board Game คือเกมแนวการสำรวจดันเจี้ยนลึกลับที่เต็มไปด้วยสัตว์ประหลาดและอันตรายมากมายเล่นได้ตั้งแต่ 1-4 คน",
-      images: require("../static/darksoul.jpg"),
-      price: 4000,
-      ratings: 4,
-      reviews: 2,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1
-    },
-    {
-      id: 6,
-      title: "Uno",
-      description:
-        "บอร์ดเกมธรรมดาสามัญประจำบ้าน เรียกว่าเป็นเกมสไตล์ไพ่แบบพื้นฐานที่ไม่ว่าใครก็ต้องรู้จักดี เพราะทั้งพกพาง่าย เล่นก็ง่ายอาศัยการลงไพ่สีเดียวกันเลขเดียวกันถ้าไม่มีก็ต้องจั่วเพิ่มจนกว่าจะมีไพ่ที่สามารถลงต่อได้ แถมยังมีไพ่พิเศษ บังคับให้ต้องลงสองใบ สี่ใบสะสมต่อไปเรื่อยๆ",
-      images: require("../static/uno.jpg"),
-      price: 250,
-      ratings: 5,
-      reviews: 1,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
+      isRecommend: false,
+      isPromotion: false,
       quantity: 1
     }
+    // {
+    //   id: 4,
+    //   title: "Exploding Kittens",
+    //   description:
+    //     "วิธีเล่นเหมือนการเดิมพันรัสเชียนรูเล็ตต์ที่ต้องอาศัยกลยุทธ์และพลังแมวเหมียว ผู้เล่นจะผลัดกันจั่วการ์ดจนกว่าจะมีคนจั่วเจอแมวระเบิด และระเบิดตัวตายออกจากเกม นอกจากว่าจะมีการ์ดปลดระเบิดที่ช่วยให้รอดตายจากแมวด้วยการใช้ปากกาเลเซอร์ล่อแมว เกาพุง หรือแซนวิชกัญชาแมว ส่วนการ์ดอื่นๆ ในกองมีไว้เพื่อช่วยให้ผู้เล่นสามารถหลีกเลี่ยงหรือย้ายที่แมวระเบิดได้",
+    //   images: require("../static/cat.jpeg"),
+    //   price: 700,
+    //   ratings: 1,
+    //   reviews: 0,
+    //   isAddedToCart: false,
+    //   isAddedBtn: false,
+    //   isFavourite: false,
+    //   quantity: 1
+    // },
+    // {
+    //   id: 5,
+    //   title: "Dark Souls",
+    //   description:
+    //     "Dark Souls: The Board Game คือเกมแนวการสำรวจดันเจี้ยนลึกลับที่เต็มไปด้วยสัตว์ประหลาดและอันตรายมากมายเล่นได้ตั้งแต่ 1-4 คน",
+    //   images: require("../static/darksoul.jpg"),
+    //   price: 4000,
+    //   ratings: 4,
+    //   reviews: 2,
+    //   isAddedToCart: false,
+    //   isAddedBtn: false,
+    //   isFavourite: false,
+    //   quantity: 1
+    // },
+    // {
+    //   id: 6,
+    //   title: "Uno",
+    //   description:
+    //     "บอร์ดเกมธรรมดาสามัญประจำบ้าน เรียกว่าเป็นเกมสไตล์ไพ่แบบพื้นฐานที่ไม่ว่าใครก็ต้องรู้จักดี เพราะทั้งพกพาง่าย เล่นก็ง่ายอาศัยการลงไพ่สีเดียวกันเลขเดียวกันถ้าไม่มีก็ต้องจั่วเพิ่มจนกว่าจะมีไพ่ที่สามารถลงต่อได้ แถมยังมีไพ่พิเศษ บังคับให้ต้องลงสองใบ สี่ใบสะสมต่อไปเรื่อยๆ",
+    //   images: require("../static/uno.jpg"),
+    //   price: 250,
+    //   ratings: 5,
+    //   reviews: 1,
+    //   isAddedToCart: false,
+    //   isAddedBtn: false,
+    //   isFavourite: false,
+    //   quantity: 1
+    // }
   ],
   userInfo: {
     isLoggedIn: false,

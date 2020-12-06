@@ -1,6 +1,8 @@
 <template>
   <div>
     <div class="card-image">
+      <button class="button is-danger" v-if="product.isRecommend">สินค้าแนะนำ !!!</button>
+      <button class="button is-danger" v-if="product.isPromotion">ลดราคา 50%</button>
       <figure class="image is-4by3">
         <img :src="product.images" alt="Placeholder image">
       </figure>
@@ -44,7 +46,9 @@
           <p>{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p>
         </div>
         <p class="is-pulled-right">
-          <span class="title is-4"><strong>&#3647; {{ product.price }}</strong></span>
+          <span v-if="product.isPromotion" class="title is-4"><strong>&#3647; <s>{{ product.price }} </s></strong></span>
+          <span v-if="product.isPromotion" class="title is-4 ml-1"><strong>&#3647; 425 </strong></span>
+          <span v-if="!product.isPromotion" class="title is-4"><strong>&#3647; {{ product.price }}</strong></span>
         </p>
       </div>
       <div class="card-footer btn-actions">

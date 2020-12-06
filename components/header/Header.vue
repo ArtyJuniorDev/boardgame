@@ -17,6 +17,7 @@
         <div class="navbar-start">
           <div class="navbar-item field">
             <VmSearch></VmSearch>
+          <nuxt-link class="button is-ghost ml-3" to="/howtobuy"><span>ขั้นตอนการสั่งซื้อ</span></nuxt-link>
           </div>
         </div>
         

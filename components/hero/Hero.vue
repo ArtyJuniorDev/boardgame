@@ -4,6 +4,9 @@
       <div class="container">
         <h1 class="title">Board Game Shop</h1>
         <h2 class="subtitle">All About Board Game</h2>
+        <div class="buttons">
+          <nuxt-link class="button is-warning" to="/about">About Shop</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
